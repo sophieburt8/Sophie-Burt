@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boppies – Plushie Meets Blanket</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #ffffff;
+      color: #444;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #cce7ff;
+      color: #003049;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #e3f2fd;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+      margin: 0 25px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #023e8a;
+    }
+
+    .main {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .main img {
+      width: 220px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 15px;
+      text-decoration: none;
+      background: #d9f3ff;
+      color: #005f73;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #bde0fe;
+    }
+
+    footer {
+      background: #cce7ff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Boppies 🧸</h1>
+    <p>Where cuddly plushies transform into cozy blankets!</p>
+  </header>
+
+  <nav>
+
+  </nav>
+
+  <div class="main">
+    <h2>Snuggles on the go, wherever you go.</h2>
+    <p>Boppies is a one-of-a-kind plush toy that unfolds into a warm, fuzzy blanket. Perfect for road trips, nap time, or just everyday cozy vibes!</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cute teddy bear icon">
+<!-- Name Generator Section START -->
+<div style="margin-top: 40px;">
+  <h3>🧸 Name Your Boppie!</h3>
+  <button onclick="generateName()" style="padding: 12px 25px; font-size: 1em; border: none; border-radius: 25px; background-color: #bde0fe; color: #003049; font-weight: bold; cursor: pointer;">
+    Generate a Name
+  </button>
+  <p id="boppie-name" style="font-size: 1.3em; margin-top: 20px; color: #0077b6;"></p>
+</div>
+
+<script>
+  const names = [
+    "Snugglebug", "Fuzzletop", "Waffle", "Nibbles", "Moofy", "Toffee", "Pickles", 
+    "Tater Tot", "Pudding", "Bubbles", "Sunny", "Peachy", "Cuddlebug", "Zuzu", "Sprinkles"
+  ];
+
+  function generateName() {
+    const randomIndex = Math.floor(Math.random() * names.length);
+    const name = names[randomIndex];
+    document.getElementById('boppie-name').textContent = `Your Boppie's name is: ${name}!`;
+  }
+</script>
+<!-- Name Generator Section END -->
+
+    <div class="social-links">
+      <h3>Follow Our Adventures:</h3>
+      <a href="https://www.instagram.com/boppies.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">📸 Instagram</a>
+      <a href="https://www.youtube.com/@burtwins" target="_blank">📹 YouTube</a>
+      <a href="https://sophieandsage.blogspot.com/" target="_blank">✍️ Blogspot</a>
+    </div>
+  </div>
+<a href="index.html">Resume page</a>
+  <footer>
+    © 2025 Boppies Co. | Created with love by Sophie & Sage 💕
+  </footer>
+
+  
+
+</body>
+</html>
+
+
